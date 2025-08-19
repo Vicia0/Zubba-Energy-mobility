@@ -6,41 +6,73 @@ import Scene3D from '@/components/3D/Scene3D';
 const StoryTimeline = () => {
   const timelineItems = [
     {
+      step: '01',
       year: 'The Challenge',
       title: 'High Barriers to Entry',
       description: 'High upfront motorcycle costs keep talented riders locked out of the Boda Boda opportunity, despite earning potential of $7-15 per day.',
-      icon: DollarSign
+      icon: DollarSign,
+      color: 'text-red-500',
+      bgColor: 'bg-red-500/10'
     },
     {
+      step: '02',
       year: 'The Reality',
       title: 'Essential Transportation',
       description: 'Boda Bodas are not just transport - they are lifelines connecting communities, transporting goods, and providing livelihoods for thousands.',
-      icon: MapPin
+      icon: MapPin,
+      color: 'text-yellow-500',
+      bgColor: 'bg-yellow-500/10'
     },
     {
+      step: '03',
       year: 'Our Solution',
       title: 'Lease-to-Own Model',
       description: 'Zubba Energy removes barriers through flexible financing, skills training, and sustainable electric technology.',
-      icon: Users
+      icon: Users,
+      color: 'text-primary',
+      bgColor: 'bg-primary/10'
     }
   ];
 
   return (
-    <div className="space-y-12">
-      {timelineItems.map((item, index) => (
-        <div key={index} className="flex gap-8 items-start">
-          <div className="flex-shrink-0">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-              <item.icon className="w-8 h-8 text-primary" />
+    <div className="relative">
+      {/* Connecting Line */}
+      <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-gradient-to-b from-red-500 via-yellow-500 to-primary hidden md:block"></div>
+      
+      <div className="space-y-16">
+        {timelineItems.map((item, index) => (
+          <div key={index} className="relative flex gap-8 items-start group">
+            {/* Step Circle */}
+            <div className="flex-shrink-0 relative z-10">
+              <div className={`w-16 h-16 ${item.bgColor} rounded-full flex items-center justify-center border-4 border-background transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg`}>
+                <item.icon className={`w-8 h-8 ${item.color}`} />
+              </div>
+              {/* Step Number */}
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-card border-2 border-border rounded-full flex items-center justify-center text-sm font-bold text-foreground">
+                {item.step}
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="flex-1 group-hover:translate-x-2 transition-transform duration-300">
+              <div className="bg-card/80 backdrop-blur-md rounded-2xl p-8 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl">
+                <h3 className={`text-sm font-bold mb-2 ${item.color} uppercase tracking-wide`}>{item.year}</h3>
+                <h4 className="text-2xl font-bold mb-4 text-foreground">{item.title}</h4>
+                <p className="text-muted-foreground leading-relaxed text-lg">{item.description}</p>
+              </div>
             </div>
           </div>
-          <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-2 text-accent">{item.year}</h3>
-            <h4 className="text-xl font-semibold mb-4">{item.title}</h4>
-            <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-          </div>
+        ))}
+      </div>
+      
+      {/* Progress Indicator */}
+      <div className="mt-12 flex justify-center">
+        <div className="flex gap-3">
+          {timelineItems.map((item, index) => (
+            <div key={index} className={`w-3 h-3 rounded-full ${item.bgColor} border-2 border-background`}></div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };
