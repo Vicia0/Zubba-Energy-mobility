@@ -1,14 +1,38 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const isActive = (path: string) => location.pathname === path;
+
+  const NavLink = ({ to, children, className = "", onClick }: { 
+    to: string; 
+    children: React.ReactNode; 
+    className?: string;
+    onClick?: () => void;
+  }) => (
+    <Link 
+      to={to}
+      onClick={onClick}
+      className={`${className} relative group`}
+    >
+      {children}
+      {isActive(to) && (
+        <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-accent animate-pulse"></div>
+      )}
+      {isActive(to) && (
+        <div className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full animate-pulse shadow-lg shadow-primary/50"></div>
+      )}
+    </Link>
+  );
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -19,36 +43,36 @@ const Header = () => {
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
+            <NavLink 
               to="/"
               className="text-foreground hover:text-primary transition-colors"
             >
               Home
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/about"
               className="text-foreground hover:text-primary transition-colors"
             >
               About
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/story"
               className="text-foreground hover:text-primary transition-colors"
             >
               Our Story
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/model"
               className="text-foreground hover:text-primary transition-colors"
             >
               Our Model
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/trees"
               className="text-foreground hover:text-primary transition-colors"
             >
               Tree Program
-            </Link>
+            </NavLink>
             <Button variant="cta" size="sm">
               Join as Rider
             </Button>
@@ -64,41 +88,41 @@ const Header = () => {
 
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 space-y-4">
-            <Link 
+            <NavLink 
               to="/"
               onClick={closeMenu}
               className="block text-foreground hover:text-primary transition-colors"
             >
               Home
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/about"
               onClick={closeMenu}
               className="block text-foreground hover:text-primary transition-colors"
             >
               About
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/story"
               onClick={closeMenu}
               className="block text-foreground hover:text-primary transition-colors"
             >
               Our Story
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/model"
               onClick={closeMenu}
               className="block text-foreground hover:text-primary transition-colors"
             >
               Our Model
-            </Link>
-            <Link 
+            </NavLink>
+            <NavLink 
               to="/trees"
               onClick={closeMenu}
               className="block text-foreground hover:text-primary transition-colors"
             >
               Tree Program
-            </Link>
+            </NavLink>
             <Button variant="cta" size="sm" className="mt-4">
               Join as Rider
             </Button>
