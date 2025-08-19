@@ -244,44 +244,83 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {/* Animated Feature Cards */}
+            {/* Animated Feature Cards with Eternal Rotating Circles */}
             <div className="text-center p-8 card-hover bg-card rounded-2xl group">
-              <div className="relative mx-auto w-20 h-20 mb-6">
-                <div className="absolute inset-0 bg-primary/10 rounded-full animate-pulse"></div>
-                <div className="absolute inset-2 bg-primary/20 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative mx-auto w-24 h-24 mb-6">
+                {/* Outer rotating circle */}
+                <div className="absolute inset-0 rounded-full border-2 border-primary/20">
+                  <div className="absolute top-0 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1 bg-primary rounded-full animate-spin origin-[50%_48px]" style={{animationDuration: '4s'}}></div>
+                  <div className="absolute top-3 right-3 w-1.5 h-1.5 bg-primary/60 rounded-full animate-spin origin-[-36px_36px]" style={{animationDuration: '6s'}}></div>
+                </div>
+                
+                {/* Middle rotating circle */}
+                <div className="absolute inset-2 rounded-full border border-primary/30">
+                  <div className="absolute top-0 left-1/2 w-1.5 h-1.5 -translate-x-1/2 -translate-y-0.5 bg-accent rounded-full animate-spin origin-[50%_40px]" style={{animationDuration: '3s', animationDirection: 'reverse'}}></div>
+                </div>
+                
+                {/* Inner static circle with icon */}
+                <div className="absolute inset-4 bg-gradient-to-br from-primary/10 to-primary/5 rounded-full flex items-center justify-center">
                   <Battery className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
                 </div>
               </div>
               <div className="text-3xl font-bold text-primary mb-2">95%</div>
               <h3 className="font-semibold text-foreground mb-2">Reliable Uptime</h3>
               <p className="text-muted-foreground text-sm">Battery swaps in under 3 minutes keep you earning</p>
+              <button className="mt-4 px-6 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">
+                TECHNOLOGY
+              </button>
             </div>
 
             <div className="text-center p-8 card-hover bg-card rounded-2xl group">
-              <div className="relative mx-auto w-20 h-20 mb-6">
-                <div className="absolute inset-0 bg-accent/10 rounded-full animate-pulse"></div>
-                <div className="absolute inset-2 bg-accent/20 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative mx-auto w-24 h-24 mb-6">
+                {/* Outer rotating circle */}
+                <div className="absolute inset-0 rounded-full border-2 border-accent/20">
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-accent rounded-full animate-spin origin-[-40px_40px]" style={{animationDuration: '5s'}}></div>
+                  <div className="absolute bottom-1 left-1/2 w-1.5 h-1.5 -translate-x-1/2 bg-accent/60 rounded-full animate-spin origin-[50%_-46px]" style={{animationDuration: '7s'}}></div>
+                </div>
+                
+                {/* Middle rotating circle */}
+                <div className="absolute inset-2 rounded-full border border-accent/30">
+                  <div className="absolute top-1 left-1 w-1.5 h-1.5 bg-secondary-foreground rounded-full animate-spin origin-[38px_38px]" style={{animationDuration: '4s', animationDirection: 'reverse'}}></div>
+                </div>
+                
+                {/* Inner static circle with icon */}
+                <div className="absolute inset-4 bg-gradient-to-br from-accent/10 to-accent/5 rounded-full flex items-center justify-center">
                   <Users className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
                 </div>
               </div>
               <div className="text-3xl font-bold text-accent mb-2">2,500+</div>
               <h3 className="font-semibold text-foreground mb-2">Active Riders</h3>
               <p className="text-muted-foreground text-sm">Growing community of empowered entrepreneurs</p>
+              <button className="mt-4 px-6 py-2 bg-accent/10 text-accent rounded-full text-sm hover:bg-accent/20 transition-colors">
+                COMMUNITY
+              </button>
             </div>
 
             <div className="text-center p-8 card-hover bg-card rounded-2xl group">
-              <div className="relative mx-auto w-20 h-20 mb-6">
-                <div className="absolute inset-0 bg-secondary/30 rounded-full animate-pulse"></div>
-                <div className="absolute inset-2 bg-secondary/40 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative mx-auto w-24 h-24 mb-6">
+                {/* Outer rotating circle */}
+                <div className="absolute inset-0 rounded-full border-2 border-secondary-foreground/20">
+                  <div className="absolute top-0 right-1/2 w-2 h-2 translate-x-1/2 -translate-y-1 bg-secondary-foreground rounded-full animate-spin origin-[50%_48px]" style={{animationDuration: '6s'}}></div>
+                  <div className="absolute bottom-2 right-3 w-1.5 h-1.5 bg-secondary-foreground/60 rounded-full animate-spin origin-[-36px_-36px]" style={{animationDuration: '4s'}}></div>
+                </div>
+                
+                {/* Middle rotating circle */}
+                <div className="absolute inset-2 rounded-full border border-secondary-foreground/30">
+                  <div className="absolute bottom-0 left-1/2 w-1.5 h-1.5 -translate-x-1/2 translate-y-0.5 bg-primary rounded-full animate-spin origin-[50%_-40px]" style={{animationDuration: '3.5s', animationDirection: 'reverse'}}></div>
+                </div>
+                
+                {/* Inner static circle with icon */}
+                <div className="absolute inset-4 bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-full flex items-center justify-center">
                   <Leaf className="w-8 h-8 text-secondary-foreground group-hover:scale-110 transition-transform" />
                 </div>
               </div>
               <div className="text-3xl font-bold text-secondary-foreground mb-2">0</div>
               <h3 className="font-semibold text-foreground mb-2">Emissions</h3>
               <p className="text-muted-foreground text-sm">100% electric, protecting our shared environment</p>
+              <button className="mt-4 px-6 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm hover:bg-secondary/30 transition-colors">
+                CHARGING
+              </button>
             </div>
           </div>
 
