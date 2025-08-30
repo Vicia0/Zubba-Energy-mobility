@@ -38,7 +38,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold">
+          <Link to="/" className="text-2xl font-bold flex items-center gap-2">
+            <img 
+              src="/logo.svg" 
+              alt="Zubba Energy Logo" 
+              className="w-8 h-8 object-contain"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
             <span className="hero-text">Zubba Energy</span>
           </Link>
           
