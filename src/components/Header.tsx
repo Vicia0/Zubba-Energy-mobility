@@ -40,9 +40,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-bold flex items-center gap-2">
             <img 
-              src="/logo.svg" 
+              src="/logo.png" 
               alt="Zubba Energy Logo" 
-              className="w-8 h-8 object-contain"
+              className="w-24 h-24 object-contain"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
               }}
