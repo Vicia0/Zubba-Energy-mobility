@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Scene3D from '@/components/3D/Scene3D';
 import FloatingMotorcycle from '@/components/3D/FloatingMotorcycle';
-import electricBikeMotion from '@/assets/electric-bike-motion.jpg';
+import heroImage from '@/assets/hero-image.jpg';
 import communityImage from '@/assets/community.jpg';
 import batterySwapImage from '@/assets/battery-swap.jpg';
 import treeProgramImage from '@/assets/tree-program.jpg';
@@ -39,7 +39,7 @@ const Home = () => {
       title: "Building Dreams",
       subtitle: "From Survival to Success",
       description: "Through flexible payments and comprehensive training, we transform lives. Riders learn not just to drive, but to run businesses, manage finances, and become pillars of their communities.",
-      image: electricBikeMotion,
+      image: heroImage,
       stats: { value: "$400+", label: "Monthly Earnings" }
     }
   ];
@@ -72,10 +72,10 @@ const Home = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center relative overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{ backgroundImage: `url(${electricBikeMotion})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{ backgroundImage: `url(${heroImage})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-accent/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
         </div>
         
         {/* 3D Background */}
