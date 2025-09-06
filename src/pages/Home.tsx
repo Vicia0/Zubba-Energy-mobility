@@ -72,18 +72,18 @@ const Home = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center relative overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
         </div>
         
         {/* 3D Background */}
-        <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0">
           <Scene3D cameraPosition={[3, 2, 5]} autoRotate={true}>
             <FloatingMotorcycle />
           </Scene3D>
-        </div>
+        </div> */}
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">

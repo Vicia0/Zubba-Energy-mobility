@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, DollarSign, MapPin, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Scene3D from '@/components/3D/Scene3D';
+import heroImage from '@/assets/community.jpg';
 
 const StoryTimeline = () => {
   const timelineItems = [
@@ -82,9 +83,16 @@ const Story = () => {
     <div className="min-h-screen bg-gradient-to-br from-background to-secondary/10">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-40"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
+          </div>
+        </div>
+        {/* <div className="absolute inset-0 z-0 opacity-20">
           <Scene3D cameraPosition={[5, 3, 8]} autoRotate={true}>
-            {/* Multiple floating motorcycles */}
             <group position={[0, 0, 0]}>
               <mesh>
                 <boxGeometry args={[1.5, 0.3, 0.2]} />
@@ -114,7 +122,7 @@ const Story = () => {
               </mesh>
             </group>
           </Scene3D>
-        </div>
+        </div> */}
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">

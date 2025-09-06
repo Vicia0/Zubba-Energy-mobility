@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Scene3D from '@/components/3D/Scene3D';
 import FloatingMotorcycle from '@/components/3D/FloatingMotorcycle';
 import communityImage from '@/assets/community.jpg';
+import heroImage from '@/assets/community.jpg';
 
 const About = () => {
   const values = [
@@ -31,16 +32,14 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-accent/5">
-      {/* Hero Section with 3D */}
       <section className="min-h-screen flex items-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Scene3D cameraPosition={[4, 3, 6]} autoRotate={true}>
-            <FloatingMotorcycle />
-            <mesh position={[0, -2, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-              <planeGeometry args={[20, 20]} />
-              <meshStandardMaterial color="#e8f5e8" transparent opacity={0.3} />
-            </mesh>
-          </Scene3D>
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-40"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
+          </div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Scene3D from '@/components/3D/Scene3D';
 import TreeScene from '@/components/3D/TreeScene';
 import treeProgramImage from '@/assets/tree-program.jpg';
+import heroImage from '@/assets/tree.jpeg';
 
 const TreeProgramFeature = ({ icon: Icon, title, description }: {
   icon: any;
@@ -55,10 +56,19 @@ const Trees = () => {
     <div className="min-h-screen bg-gradient-to-br from-background to-accent/5">
       {/* Hero Section with 3D Trees */}
       <section className="min-h-screen flex items-center relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0">
           <Scene3D cameraPosition={[8, 6, 10]} autoRotate={true}>
             <TreeScene />
           </Scene3D>
+        </div> */}
+
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-45"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
+          </div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">

@@ -4,6 +4,7 @@ import { ArrowRight, Battery, Wrench, GraduationCap, CreditCard, Zap } from 'luc
 import { Link } from 'react-router-dom';
 import Scene3D from '@/components/3D/Scene3D';
 import batterySwapImage from '@/assets/battery-swap.jpg';
+import heroImage from '@/assets/hero-image.jpg';
 
 const ModelFeature = ({ icon: Icon, title, description, details }: {
   icon: any;
@@ -99,17 +100,13 @@ const Model = () => {
     <div className="min-h-screen bg-gradient-to-br from-background to-primary/5">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-30">
+        {/* <div className="absolute inset-0 z-0 opacity-30">
           <Scene3D cameraPosition={[6, 4, 8]} autoRotate={true}>
-            {/* Battery swap station visualization */}
             <group>
-              {/* Station base */}
               <mesh position={[0, -1, 0]}>
                 <cylinderGeometry args={[2, 2, 0.2]} />
                 <meshStandardMaterial color="#2d4a2b" />
               </mesh>
-              
-              {/* Battery slots */}
               {Array.from({ length: 6 }).map((_, i) => (
                 <mesh 
                   key={i} 
@@ -123,16 +120,21 @@ const Model = () => {
                   <meshStandardMaterial color="#4a8c2a" />
                 </mesh>
               ))}
-              
-              {/* Central pillar */}
               <mesh position={[0, 0, 0]}>
                 <cylinderGeometry args={[0.3, 0.3, 2]} />
                 <meshStandardMaterial color="#1a1a1a" />
               </mesh>
             </group>
           </Scene3D>
+        </div> */}
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-40"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
+          </div>
         </div>
-        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-6xl md:text-7xl font-bold mb-8 leading-tight">
