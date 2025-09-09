@@ -58,11 +58,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 group">
                 <Mail className="h-4 w-4 text-accent group-hover:scale-110 transition-transform" />
-                <span className="text-background/80">hello@zubbaenergy.com</span>
+                <span className="text-background/80">charite.abijuru@zubbaenergy.com</span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <Phone className="h-4 w-4 text-accent group-hover:scale-110 transition-transform" />
-                <span className="text-background/80">+250 788 000 000</span>
+                <span className="text-background/80">+250 785 325 984</span>
               </div>
             </div>
             
