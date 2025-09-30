@@ -36,11 +36,11 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Zubba Energy is an e-mobility venture providing connected electric motorcycle taxis (Boda Bodas) to riders in Rwanda through a lease-to-own model. We believe clean energy should be for everyone, not just the privileged.
+              Zubba Energy is an e-mobility venture providing connected electric motorcycle taxis (Boda Bodas) to riders in Rwanda through a lease to own model. We believe clean energy should be for everyone, not just the privileged.
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We focus on the most vulnerable — including refugee communities and people in rural, hard-to-reach areas — breaking financial and geographical barriers to sustainable transport. We manage the entire rider experience ensuring reliability, uptime, and maximum earning potential.
+              We focus on the most vulnerable including refugee communities and people in rural, hard-to-reach areas — breaking financial and geographical barriers to sustainable transport. We manage the entire rider experience ensuring reliability, uptime, and maximum earning potential.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">

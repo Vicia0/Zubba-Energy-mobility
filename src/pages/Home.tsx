@@ -17,21 +17,21 @@ const Home = () => {
     {
       title: "Meet Our Riders",
       subtitle: "Real People, Real Impact",
-      description: "Every day, brave riders like James, Sarah, and Emmanuel navigate Rwanda's roads, connecting communities and building their dreams. They're not just drivers - they're entrepreneurs, fathers, mothers, and hope-builders.",
+      description: "Every day, brave riders like James, Sarah, and Emmanuel navigate Rwanda's roads, connecting communities and building their dreams. They are not just drivers, they are entrepreneurs, fathers, mothers, and hope builders.",
       image: communityImage,
       stats: { value: "2,500+", label: "Active Riders" }
     },
     {
       title: "Clean Energy in Action",
       subtitle: "Zero Emissions, Maximum Impact",
-      description: "Our battery-swapping stations keep riders moving while protecting the air we breathe. In just 3 minutes, a depleted battery becomes a fully charged opportunity to earn, serve, and thrive.",
+      description: "Our battery swapping stations keep riders moving while protecting the air we breathe. In just 3 minutes, a depleted battery becomes a fully charged opportunity to earn, serve, and thrive.",
       image: batterySwapImage,
       stats: { value: "95%", label: "Uptime Guarantee" }
     },
     {
       title: "Growing Together",
       subtitle: "One Tree, One Future",
-      description: "Every motorcycle we lease plants seeds of change - literally. Our riders become environmental champions, planting trees that will shade their children and clean the air for generations to come.",
+      description: "Every motorcycle we lease plants seeds of change literally. Our riders become environmental champions, planting trees that will shade their children and clean the air for generations to come.",
       image: treeProgramImage,
       stats: { value: "50K+", label: "Trees Planted" }
     },
@@ -105,7 +105,7 @@ const Home = () => {
             </p>
             
             <p className="text-lg text-white/80 mb-12 max-w-2xl leading-relaxed">
-              Revolutionizing last-mile transportation through clean, accessible e-mobility solutions that empower riders to earn sustainable income.
+              Revolutionizing last mile transportation through clean, accessible e-mobility solutions that empower riders to earn sustainable income.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6">

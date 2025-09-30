@@ -44,7 +44,7 @@ const ModelSection = () => {
             Our <span className="text-primary">Model</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We provide last-mile, green mobility services to rural and underserved communities through an affordable lease-to-own payment plan.
+            We provide last-mile, green mobility services to rural and underserved communities through an affordable lease to own payment plan.
           </p>
         </div>
 

@@ -16,7 +16,7 @@ const StorySection = () => {
     {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Breaking Barriers",
-      description: "High upfront costs keep talented riders locked out. We're changing that with accessible financing solutions."
+      description: "High upfront costs keep talented riders locked out. We are changing that with accessible financing solutions."
     }
   ];
 

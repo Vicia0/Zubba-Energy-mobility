@@ -16,12 +16,12 @@ const About = () => {
     {
       icon: Zap,
       title: 'Innovation',
-      description: 'Cutting-edge electric technology designed for local conditions and sustainable impact.'
+      description: 'Cutting edge electric technology designed for local conditions and sustainable impact.'
     },
     {
       icon: Shield,
       title: 'Reliability',
-      description: 'We control every aspect of the experience - design, maintenance, battery swaps, and support.'
+      description: 'We control every aspect of the experience  design, maintenance, battery swaps, and support.'
     },
     {
       icon: Users,
@@ -49,14 +49,14 @@ const About = () => {
             </h1>
             
             <p className="text-2xl text-muted-foreground mb-8 leading-relaxed">
-              We're an e-mobility venture transforming transportation in Rwanda through connected electric motorcycles and inclusive financing.
+              We are an e-mobility venture transforming transportation in Rwanda through connected electric motorcycles and inclusive financing.
             </p>
             
             <div className="bg-card/80 backdrop-blur-md rounded-3xl p-8 mb-12 border border-border/50">
               <h2 className="text-3xl font-bold mb-6 text-primary">Our Mission</h2>
               <p className="text-lg leading-relaxed text-foreground">
                 We believe clean energy should be for everyone, not just the privileged. By focusing on vulnerable communities, 
-                including refugees and rural populations, we're breaking down financial and geographical barriers to sustainable transport. 
+                including refugees and rural populations, we are breaking down financial and geographical barriers to sustainable transport. 
                 We control every aspect of the rider experience to ensure reliability and maximum earning potential.
               </p>
             </div>
@@ -77,8 +77,8 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-5xl font-bold mb-8">Our Vision</h2>
             <p className="text-2xl text-muted-foreground leading-relaxed">
-              To provide affordable, sustainable, and zero-emissions last-mile transportation 
-              in East African cities and rural communities — enabling mobility for all, while protecting our planet.
+              To provide affordable, sustainable, and zero emissions last mile transportation 
+              in East African cities and rural communities enabling mobility for all, while protecting our planet.
             </p>
           </div>
           
@@ -140,7 +140,7 @@ const About = () => {
                 Learn About Our Model
               </Link>
             </Button>
-            <Button asChild variant="outline" size="xl" className="border-white/30 text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="xl" className="border-white/30 hover:bg-white hover:text-primary">
               <Link to="/trees">
                 Explore Tree Program
               </Link>

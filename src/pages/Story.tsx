@@ -19,7 +19,7 @@ const StoryTimeline = () => {
       step: '02',
       year: 'The Reality',
       title: 'Essential Transportation',
-      description: 'Boda Bodas are not just transport - they are lifelines connecting communities, transporting goods, and providing livelihoods for thousands.',
+      description: 'Boda Bodas are not just transport, they are lifelines connecting communities, transporting goods, and providing livelihoods for thousands.',
       icon: MapPin,
       color: 'text-yellow-500',
       bgColor: 'bg-yellow-500/10'
@@ -27,7 +27,7 @@ const StoryTimeline = () => {
     {
       step: '03',
       year: 'Our Solution',
-      title: 'Lease-to-Own Model',
+      title: 'Lease to Own Model',
       description: 'Zubba Energy removes barriers through flexible financing, skills training, and sustainable electric technology.',
       icon: Users,
       color: 'text-primary',
@@ -131,7 +131,7 @@ const Story = () => {
             </h1>
             
             <p className="text-2xl text-muted-foreground mb-8 leading-relaxed">
-              In Rwanda and across East Africa, Boda Bodas aren't just motorcycles — they're lifelines, connecting communities and creating livelihoods.
+              In Rwanda and across East Africa, Boda Bodas are not just motorcycles, they are lifelines, connecting communities and creating livelihoods.
             </p>
             
             <div className="bg-card/80 backdrop-blur-md rounded-3xl p-8 mb-12 border border-border/50">
@@ -187,7 +187,7 @@ const Story = () => {
             <h3 className="text-3xl font-bold mb-6">Zubba Energy was created to change this story</h3>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               We give riders the chance to own their motorcycles, earn sustainable income, 
-              and be part of Rwanda's green energy transition — turning barriers into bridges.
+              and be part of Rwanda's green energy transition turning barriers into bridges.
             </p>
             
             <Button asChild variant="hero" size="xl" className="group">

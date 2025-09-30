@@ -46,7 +46,7 @@ const Model = () => {
       details: [
         'Small weekly payments instead of large upfront costs',
         'Payments matched to earning cycles',
-        'Lease-to-own pathway to motorcycle ownership',
+        'Lease to own pathway to motorcycle ownership',
         'No traditional credit requirements'
       ]
     },
@@ -56,7 +56,7 @@ const Model = () => {
       description: 'Electric motorcycles engineered for local conditions and maximum reliability.',
       details: [
         'Built for Rwanda\'s diverse terrain',
-        'Weather-resistant components',
+        'Weather resistant components',
         'Local maintenance capabilities',
         'Extended battery life optimization'
       ]
@@ -68,13 +68,13 @@ const Model = () => {
       details: [
         'Zero charging downtime',
         'Strategic swap station locations',
-        'Always-ready backup batteries',
+        'Always ready backup batteries',
         'Lower operational costs than fuel'
       ]
     },
     {
       icon: Wrench,
-      title: 'Full-Service Support',
+      title: 'Full Service Support',
       description: 'Complete maintenance, repairs, and spare parts included in the service package.',
       details: [
         'Regular maintenance included',
@@ -142,14 +142,14 @@ const Model = () => {
             </h1>
             
             <p className="text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Last-mile, green mobility services through an affordable lease-to-own payment plan designed for vulnerable communities.
+              Last mile, green mobility services through an affordable lease to own payment plan designed for vulnerable communities.
             </p>
             
             <div className="bg-card/80 backdrop-blur-md rounded-3xl p-8 mb-12 border border-border/50">
               <h2 className="text-3xl font-bold mb-6 text-primary">Integrated Approach</h2>
               <p className="text-lg leading-relaxed text-foreground">
                 By combining clean technology with financial inclusion, we create both environmental and economic impact. 
-                Our model removes the biggest barrier to entry — high upfront costs — and replaces it with small, 
+                Our model removes the biggest barrier to entry high upfront costs and replaces it with small, 
                 flexible payments aligned with riders' income cycles.
               </p>
             </div>
@@ -219,7 +219,7 @@ const Model = () => {
           <h2 className="text-5xl font-bold mb-8">Creating Lasting Impact</h2>
           <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto">
             By combining clean energy with financial inclusion, we enable youth and vulnerable groups 
-            to move from survival to self-reliance while driving the shift to a zero-emissions future.
+            to move from survival to self reliance while driving the shift to a zero emissions future.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

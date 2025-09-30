@@ -78,20 +78,20 @@ const Trees = () => {
             </h1>
             
             <p className="text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Every ride we power should also restore the planet. We're planting 1 million trees by 2035.
+              Every ride we power should also restore the planet. We are planting 1 million trees by 2035.
             </p>
             
             <div className="bg-card/80 backdrop-blur-md rounded-3xl p-8 mb-12 border border-border/50">
               <h2 className="text-3xl font-bold mb-6 text-primary">Why Trees?</h2>
               <p className="text-lg leading-relaxed text-foreground mb-6">
-                At Zubba Energy, sustainability isn't just about reducing emissions — it's about actively restoring 
+                At Zubba Energy, sustainability is not just about reducing emissions, it is about actively restoring 
                 the world we all share. While our electric motorcycles cut CO₂ emissions from transport, we also 
                 recognize the urgent need to reverse environmental damage caused by deforestation and climate change.
               </p>
               <p className="text-lg leading-relaxed text-foreground">
-                In rural Rwanda, especially in refugee-hosting areas, degraded land limits farming, biodiversity, 
-                and livelihoods. Trees offer a powerful solution — improving soil health, restoring water cycles, 
-                and creating long-term income opportunities for communities.
+                In rural Rwanda, especially in refugee hosting areas, degraded land limits farming, biodiversity, 
+                and livelihoods. Trees offer a powerful solution, improving soil health, restoring water cycles, 
+                and creating longterm income opportunities for communities.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Trees = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
               <div className="absolute bottom-8 left-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">Community-Led Restoration</h3>
+                <h3 className="text-2xl font-bold mb-2">Community Led Restoration</h3>
                 <p className="opacity-90">Empowering local communities to lead environmental change</p>
               </div>
             </div>
@@ -127,8 +127,8 @@ const Trees = () => {
                     <TreePine className="w-4 h-4 text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">Community-Owned Model</h4>
-                    <p className="text-muted-foreground">Unlike large-scale plantations, our model is community-owned with local stewardship.</p>
+                    <h4 className="text-lg font-semibold mb-2">Community Owned Model</h4>
+                    <p className="text-muted-foreground">Unlike large scale plantations, our model is community owned with local stewardship.</p>
                   </div>
                 </div>
                 
@@ -138,7 +138,7 @@ const Trees = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold mb-2">Green Ambassadors</h4>
-                    <p className="text-muted-foreground">Riders become "Green Ambassadors," planting and maintaining trees along roads and community spaces.</p>
+                    <p className="text-muted-foreground">Riders become "Green Ambassadors" planting and maintaining trees along roads and community spaces.</p>
                   </div>
                 </div>
                 
@@ -148,7 +148,7 @@ const Trees = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold mb-2">Training & Support</h4>
-                    <p className="text-muted-foreground">We supply seedlings, offer training in tree care, and work with community-led nurseries.</p>
+                    <p className="text-muted-foreground">We supply seedlings, offer training in tree care, and work with community led nurseries.</p>
                   </div>
                 </div>
               </div>
@@ -236,7 +236,7 @@ const Trees = () => {
                 Learn About Zubba Energy
               </Link>
             </Button>
-            <Button asChild variant="outline" size="xl" className="border-white/30 text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="xl" className="border-white/30 hover:bg-white hover:text-primary">
               <Link to="/">
                 Back to Home
                 <ArrowRight className="ml-3 h-6 w-6" />

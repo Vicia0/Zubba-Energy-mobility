@@ -24,7 +24,7 @@ const Footer = () => {
                 Join the <span className="text-accent">Green Revolution</span>
               </h3>
               <p className="text-background/80 mb-6">
-                Get updates on our riders' journeys, environmental impact, and how we're transforming mobility across Rwanda.
+                Get updates on our riders' journeys, environmental impact, and how we are transforming mobility across Rwanda.
               </p>
             </div>
             <div className="flex gap-4">
