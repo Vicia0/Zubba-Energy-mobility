@@ -19,7 +19,7 @@ const Home = () => {
       subtitle: "Real People, Real Impact",
       description: "Every day, brave riders like James, Sarah, and Emmanuel navigate Rwanda's roads, connecting communities and building their dreams. They are not just drivers, they are entrepreneurs, fathers, mothers, and hope builders.",
       image: communityImage,
-      stats: { value: "2,500+", label: "Active Riders" }
+      stats: { value: "25+", label: "Active Riders" }
     },
     {
       title: "Clean Energy in Action",
@@ -315,9 +315,9 @@ const Home = () => {
                   <Leaf className="w-8 h-8 text-secondary-foreground group-hover:scale-110 transition-transform" />
                 </div>
               </div>
-              <div className="text-3xl font-bold text-secondary-foreground mb-2">0</div>
-              <h3 className="font-semibold text-foreground mb-2">Emissions</h3>
-              <p className="text-muted-foreground text-sm">100% electric, protecting our shared environment</p>
+              <div className="text-3xl font-bold text-secondary-foreground mb-2">14t</div>
+              <h3 className="font-semibold text-foreground mb-2">CO₂e Avoided</h3>
+              <p className="text-muted-foreground text-sm">14 tonnes of CO₂e avoided per motorcycle per year</p>
               <button className="mt-4 px-6 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm hover:bg-secondary/30 transition-colors">
                 CHARGING
               </button>
