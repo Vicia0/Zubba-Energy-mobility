@@ -315,8 +315,8 @@ const Home = () => {
                   <Leaf className="w-8 h-8 text-secondary-foreground group-hover:scale-110 transition-transform" />
                 </div>
               </div>
-              <div className="text-3xl font-bold text-secondary-foreground mb-2">4,700 tCO₂e0</div>
-              <h3 className="font-semibold text-foreground mb-2">Emissions to be avoided by 203</h3>
+              <div className="text-3xl font-bold text-secondary-foreground mb-2">4,700 tCO₂e </div>
+              <h3 className="font-semibold text-foreground mb-2">Emissions to be avoided by 2030</h3>
               <p className="text-muted-foreground text-sm">100% electric, protecting our shared environment</p>
               <button className="mt-4 px-6 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm hover:bg-secondary/30 transition-colors">
                 CHARGING
