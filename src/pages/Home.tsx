@@ -290,7 +290,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl font-bold text-accent mb-2">2,500+</div>
-              <h3 className="font-semibold text-foreground mb-2">Active Riders by 2025</h3>
+              <h3 className="font-semibold text-foreground mb-2">Active Riders by 2035</h3>
               <p className="text-muted-foreground text-sm">Growing community of empowered entrepreneurs</p>
               <button className="mt-4 px-6 py-2 bg-accent/10 text-accent rounded-full text-sm hover:bg-accent/20 transition-colors">
                 COMMUNITY
@@ -316,7 +316,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl font-bold text-secondary-foreground mb-2">4,700 tCO₂e </div>
-              <h3 className="font-semibold text-foreground mb-2">Emissions to be avoided by 2030</h3>
+              <h3 className="font-semibold text-foreground mb-2">Emissions to be avoided by 2035</h3>
               <p className="text-muted-foreground text-sm">100% electric, protecting our shared environment</p>
               <button className="mt-4 px-6 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm hover:bg-secondary/30 transition-colors">
                 CHARGING
